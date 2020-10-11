@@ -1,0 +1,26 @@
+{
+  "name": "vef1-2020-v6",
+  "version": "1.0.0",
+  "description": "## Lýsing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katagla/vef1-2020-v6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katagla/vef1-2020-v6/issues"
+  },
+  "homepage": "https://github.com/katagla/vef1-2020-v6#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "concurrently": "^5.3.0",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.7.2"
+  }
+}
