@@ -1,5 +1,6 @@
 // Sækja config
 // Allir stílar fyrir "global", þ.e.a.s. type selectorar, reset etc
+@import './config';
 
 * {
     margin: 0;
@@ -10,32 +11,32 @@
   body {
     font-size: 16px;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
-    color: #222222;
+    color: $darkgrey;
   }
   
   a {
-    color: #222222;
+    color: $darkgrey;
   }
   
   button {
-    background-color: #222222;
-    color: #eeeeee;
-    border: 1px solid #000000;
+    background-color: $darkgrey;
+    color: $white;
+    border: 1px solid $black;
     border-radius: 5px;
     padding: 0.5rem;
     word-break: initial;
   
     transition:
-      color 300ms ease-in-out,
-      background-color 300ms ease-in-out ;
+      color $transition,
+      background-color $transition ;
     :hover {
-      background-color: #eeeeee;
-      color: #222222;
+      background-color: $white;
+      color: $darkgrey;
     }
     :active {
-      background-color: #222222;
-      color: #eeeeee;
-      border: 1px solid #000000;
+      background-color:$darkgrey;
+      color: $white;
+      border: 1px solid $black;
     }
   }  
   h1, h2, h3, h4 {
@@ -45,4 +46,4 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-    
+  

@@ -1,12 +1,13 @@
 // Sækja config
 // Allir stílar fyrir events
+@import './config';
 
 .events {
-    margin-bottom: 2rem;
+    margin-bottom: $marginbottom;
   }
   
   .events .col {
-    margin-bottom: 2rem;
+    margin-bottom: $marginbottom;
   }
   
   .event {
@@ -16,7 +17,7 @@
     height: 100%;
     min-height: 250px;
   
-    background-color: #cccccc;
+    background-color: $lightgrey;
   
     word-break: break-word;
       
@@ -25,11 +26,11 @@
     }
   
     h3 {
-    margin-bottom: 1rem;
+    margin-bottom: $marginbottom/2;
     }
   
     p {
-    margin-bottom: 1rem;
+    margin-bottom: $marginbottom/2;
     font-style: italic;
     }
   
@@ -43,7 +44,7 @@
     display: flex;
     left: 0; right: 0; top: 0; bottom: 0;
     transform-style: preserve-3d;
-    transition: transform 300ms ease-in-out;
+    transition: $transition;
     }
     :hover .card {
       transform: rotateY(180deg);
