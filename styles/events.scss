@@ -18,10 +18,6 @@
   width: 100%;
   word-break: break-word;
 
-  :last-child {
-    margin-right: 0;
-  }
-
   h3 {
     margin-bottom: $marginbottom/2;
   }
@@ -45,10 +41,6 @@
     top: 0;
     transform-style: preserve-3d;
     transition: $transition;
-  }
-
-  :hover .card {
-    transform: rotateY(180deg);
   }
 
   .face {
@@ -79,4 +71,12 @@
     height: 100%;
     justify-content: space-between;
   }
+}
+
+.event:hover .card {
+  transform: rotateY(180deg);
+}
+
+.event:last-child {
+  margin-right: 0;
 }

@@ -26,17 +26,17 @@ button {
   padding: 0.5rem;
   transition: color $transition, background-color $transition;
   word-break: initial;
+}
 
-  :hover {
-    background-color: $white;
-    color: $darkgrey;
-  }
+button:hover {
+  background-color: $white;
+  color: $darkgrey;
+}
 
-  :active {
-    background-color: $darkgrey;
-    border: 1px solid $black;
-    color: $white;
-  }
+button:active {
+  background-color: $darkgrey;
+  border: 1px solid $black;
+  color: $white;
 }
 
 h1,

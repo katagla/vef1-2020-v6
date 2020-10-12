@@ -4,7 +4,7 @@
   "description": "## Lýsing",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync start --server",
+    "browser-sync": "browser-sync --server --files \"*\"",
     "sass": "node-sass styles.scss styles.css",
     "dev": "concurrently npm:sass npm:browser-sync",
     "lint": "stylelint styles.scss ./*/*.scss"
