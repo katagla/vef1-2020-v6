@@ -3,47 +3,50 @@
 @import './config';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-size: 16px;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $darkgrey;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: $darkgrey;
+}
+
+button {
+  background-color: $darkgrey;
+  border: 1px solid $black;
+  border-radius: 5px;
+  color: $white;
+  padding: 0.5rem;
+  transition: color $transition, background-color $transition;
+  word-break: initial;
+
+  :hover {
+    background-color: $white;
     color: $darkgrey;
   }
-  
-  a {
-    color: $darkgrey;
-  }
-  
-  button {
+
+  :active {
     background-color: $darkgrey;
-    color: $white;
     border: 1px solid $black;
-    border-radius: 5px;
-    padding: 0.5rem;
-    word-break: initial;
-  
-    transition:
-      color $transition,
-      background-color $transition ;
-    :hover {
-      background-color: $white;
-      color: $darkgrey;
-    }
-    :active {
-      background-color:$darkgrey;
-      color: $white;
-      border: 1px solid $black;
-    }
-  }  
-  h1, h2, h3, h4 {
-    font-family: 'Montaga', Georgia, serif;
+    color: $white;
   }
-  main {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montaga', Georgia, serif;
+}
+
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
